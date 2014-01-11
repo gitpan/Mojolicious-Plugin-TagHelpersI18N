@@ -1,0 +1,12 @@
+Changes
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+dist.ini
+eg/Local/I18N/de.pm
+eg/test.psgi
+lib/Mojolicious/Plugin/TagHelpersI18N.pm
+t/Local/I18N/de.pm
+t/select_field.t

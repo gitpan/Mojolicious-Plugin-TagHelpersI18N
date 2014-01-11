@@ -1,0 +1,22 @@
+---
+abstract: 'TagHelpers with I18N support'
+author:
+  - 'Renee Baecker <reneeb@cpan.org>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132830'
+license: artistic_2
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Mojolicious-Plugin-TagHelpersI18N
+requires:
+  Mojolicious: 4.0
+  Mojolicious::Plugin::I18N: 0
+resources:
+  bugtracker: http://github.com/reneeb/Mojolicious-Plugin-TagHelpersI18N/issues
+  homepage: http://github.com/reneeb/Mojolicious-Plugin-TagHelpersI18N
+  repository: http://github.com/reneeb/Mojolicious-Plugin-TagHelpersI18N.git
+version: 0.01

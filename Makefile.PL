@@ -20,11 +20,12 @@ my %WriteMakefileArgs = (
   "LICENSE" => "artistic_2",
   "NAME" => "Mojolicious::Plugin::TagHelpersI18N",
   "PREREQ_PM" => {
-    "Mojolicious" => "4.0",
-    "Mojolicious::Plugin::I18N" => 0
+    "Mojolicious" => "4.46",
+    "Mojolicious::Plugin::I18N" => 0,
+    "Unicode::Collate" => 0
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

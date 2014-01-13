@@ -6,7 +6,10 @@ Makefile.PL
 README
 dist.ini
 eg/Local/I18N/de.pm
+eg/Local/I18N/ru.pm
 eg/test.psgi
 lib/Mojolicious/Plugin/TagHelpersI18N.pm
 t/Local/I18N/de.pm
+t/Local/I18N/ru.pm
 t/select_field.t
+t/select_sort.t

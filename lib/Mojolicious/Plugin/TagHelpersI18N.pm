@@ -7,7 +7,7 @@ use warnings;
 
 use Mojolicious::Plugin::TagHelpers;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 use Mojo::Collection;
 use Mojo::Util qw(deprecated xml_escape);
@@ -69,7 +69,7 @@ sub _prepare {
 sub _select_field {
     my ($self, $name, $options, %attrs) = (shift, shift, shift, @_);
 
-    my %values = map { $_ => 1 } $self->param($name);
+    my %values = map { $_ => 1 } @{ $self->every_param($name) || [] };
 
     my %opts;
     my @fields = qw(no_translation sort collate);
@@ -110,13 +110,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Mojolicious::Plugin::TagHelpersI18N - TagHelpers with I18N support
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
